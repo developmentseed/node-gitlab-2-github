@@ -352,6 +352,9 @@ export default class GithubHelper {
       repo: this.githubRepo,
       number: githubIssue.number,
       state: issue.state,
+      milestone: issue.milestone,
+      labels: issue.labels,
+      assignees: issue.assignees
     };
 
     await utils.sleep(2000);
